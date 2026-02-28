@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Shield – Phishing Detection Extension</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">🛡️ Email<span>Shield</span></div>
+    <div class="nav-links">
+      <a href="#how">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
+      <a href="#tech">Tech Stack</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>🛡️ Detect Phishing Emails Instantly</h1>
+    <p>Email Shield automatically scans every email you open in Gmail and warns you before you get tricked.</p>
+    <a href="#how" class="btn">See How It Works</a>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how">
+    <h2>How It Works</h2>
+    <p class="subtitle">6 simple steps — fully automatic, no copy-paste needed.</p>
+    <div class="steps">
+      <div class="step-card">
+        <div class="num">1</div>
+        <div class="icon">🌐</div>
+        <h3>Open Gmail</h3>
+        <p>Extension is already active in your browser.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">2</div>
+        <div class="icon">📧</div>
+        <h3>Extract Email</h3>
+        <p>Sender, subject, body, links and domain captured automatically.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">3</div>
+        <div class="icon">🤖</div>
+        <h3>AI Analysis</h3>
+        <p>Email content sent to AI API for threat analysis.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">4</div>
+        <div class="icon">📊</div>
+        <h3>Risk Score</h3>
+        <p>AI returns a 0–100 risk score with reasons.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">5</div>
+        <div class="icon">⚠️</div>
+        <h3>Warning Banner</h3>
+        <p>A banner appears at the top of the email if risk is high.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">6</div>
+        <div class="icon">✅</div>
+        <h3>You Decide</h3>
+        <p>Ignore, report, or mark as safe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="features-bg">
+    <section class="section" id="features">
+      <h2>What AI Checks</h2>
+      <p class="subtitle">Six threat patterns analyzed on every email.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon">🚨</div>
+          <h3>Urgency Words</h3>
+          <p>Detects phrases like "Act now", "Final warning", "Account suspended".</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔗</div>
+          <h3>Suspicious Links</h3>
+          <p>Scans all URLs for shortened, mismatched, or malicious links.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📩</div>
+          <h3>Domain Mismatch</h3>
+          <p>Flags emails like amazon-support@gmail.com pretending to be official.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔐</div>
+          <h3>Credential Harvesting</h3>
+          <p>Identifies requests for passwords, OTPs, or personal information.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📝</div>
+          <h3>Grammar Anomalies</h3>
+          <p>Poor grammar and unusual sentence patterns are flagged.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🎭</div>
+          <h3>Impersonation</h3>
+          <p>Detects attempts to impersonate banks, companies, or institutions.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- DEMO -->
+  <section class="section" id="demo">
+    <h2>Warning Banner Preview</h2>
+    <p class="subtitle">This is what appears at the top of a suspicious email in Gmail.</p>
+    <div class="demo-wrap">
+      <div class="demo-topbar">📬 Gmail — Inbox</div>
+      <div class="demo-email-header">
+        <strong>Your Account Has Been Suspended — Verify Now</strong>
+        <p>From: amazon-support@gmail.com &nbsp;|&nbsp; To: you@example.com</p>
+      </div>
+      <div class="demo-banner">
+        <div class="banner-title">⚠️ Potential Phishing Email Detected</div>
+        <ul>
+          <li>Sender domain does not match Amazon</li>
+          <li>Suspicious shortened link found</li>
+          <li>Urgent language used ("Verify Now")</li>
+        </ul>
+        <span class="risk-badge">Risk Level: HIGH — 82%</span>
+        <p style="margin-top:10px; font-size:0.82rem; color:#7a4000;">
+          <strong>Recommended:</strong> Do not click any links. Report this email.
+        </p>
+      </div>
+      <div class="demo-body">
+        Dear Customer, your account has been suspended. Click the link below
+        immediately to verify your identity or your account will be permanently deleted...
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <div class="features-bg">
+    <section class="section" id="tech">
+      <h2>Tech Stack</h2>
+      <p class="subtitle">Built with simple, proven technologies.</p>
+      <div class="tech-list">
+        <div class="tech-pill">JavaScript</div>
+        <div class="tech-pill">HTML / CSS</div>
+        <div class="tech-pill">Chrome Extension API</div>
+        <div class="tech-pill">OpenAI API</div>
+        <div class="tech-pill">Gemini API</div>
+        <div class="tech-pill">Prompt Engineering</div>
+        <div class="tech-pill">Privacy-First Design</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><span>Email Shield</span> — Phishing Detection Extension &nbsp;|&nbsp; Hackathon 2025</p>
+    <p>No data stored. Privacy-preserving design.</p>
+  </footer>
+
+</body>
+</html>
